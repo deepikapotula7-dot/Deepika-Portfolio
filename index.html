@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,15 @@
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-    *{
+
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         font-family: 'Poppins', sans-serif;
     }
-    body{
+
+    body {
         height: 100vh;
         width: 100vw;
         background-image: url(https://i.pinimg.com/736x/d2/a7/b8/d2a7b8e3626b849ed5b81e58625cae4d.jpg);
@@ -21,7 +24,8 @@
         background-size: cover;
         background-position: bottom;
     }
-    nav{
+
+    nav {
         height: 80px;
         width: 100%;
         display: flex;
@@ -30,84 +34,106 @@
         background-color: #303030;
         padding: 0 20px;
     }
-    main{
+
+    main {
         height: 600px;
         margin: auto;
         width: 80%;
         display: flex;
         justify-content: space-around;
         align-items: center;
+
     }
+
     .logo {
         font-size: 24px;
         font-weight: bold;
         margin-left: 50px;
         color: white;
     }
+
     .navlinks {
         display: flex;
         gap: 15px;
         align-items: center;
     }
+
     .text-side {
         flex: 1;
         padding: 20px;
     }
-a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-weight: 500;
-    font-size: 18px;
 
-}
-.image-side {
-    height: 80%;
-    width: 30%;
-    background:url(https://i.pinimg.com/736x/58/be/b5/58beb5b7344a0c70b41b72408879c0d6.jpg);
-    border-radius: 50%;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.contact-button {
-    padding: 10px 20px;
-    background-color: rgb(159, 159, 159);
-    color: rgb(0, 0, 0);
-    border: 1px solid white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.bottom-buttons {
-    margin-top: 50px;
-    display: flex;
-    gap: 10px;
-}
-.logo-highlight{
-    color: #E74412;
-}
-a:hover {
-    color: #E74412;
-    font-size: 20px;
-    text-decoration: underline;
-}
-.active-page{
-    color: #E74412;
-    font-size: 20px;
-    text-decoration: underline;
-}
-.contact-button:hover {
-    background-color: #E74412;
-    color: white;
-    border: 1px solid #000000;
-}
-.cv-btn:hover {
-    background-color: #E74412;
-    color: white;
-    border: 1px solid #ffffff;
-}
+    a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        font-size: 18px;
 
+    }
 
+    .image-side {
+        height: 80%;
+        width: 30%;
+        background: url(https://i.pinimg.com/736x/58/be/b5/58beb5b7344a0c70b41b72408879c0d6.jpg);
+        border-radius: 50%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .contact-button {
+        padding: 10px 20px;
+        background-color: rgb(159, 159, 159);
+        color: rgb(0, 0, 0);
+        border: 1px solid white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .bottom-buttons {
+        margin-top: 50px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .logo-highlight {
+        color: #E74412;
+    }
+
+    a:hover {
+        color: #E74412;
+        font-size: 20px;
+        text-decoration: underline;
+    }
+
+    .active-page {
+        color: #E74412;
+        font-size: 20px;
+        text-decoration: underline;
+    }
+
+    .contact-button:hover {
+        background-color: #E74412;
+        color: white;
+        border: 1px solid #000000;
+    }
+
+    .cv-btn:hover {
+        background-color: #E74412;
+        color: white;
+        border: 1px solid #ffffff;
+    }
+
+    .overlay {
+        height: 100%;
+        width: 100%;
+        background: url(download.gif);
+        background-size: cover;
+        position: absolute;
+        z-index: 2;
+    }
 </style>
+
 <body>
     <nav>
         <div class="logo"><span class="logo-highlight">Deep</span>ika</div>
@@ -120,19 +146,27 @@ a:hover {
         </div>
         <a href="contact.html"><button class="contact-button">Contact</button></a>
     </nav>
-
+    <div class="overlay"></div>
     <main>
         <div class="text-side">
             <h2>Hii</h2>
             <h1>I am <span class="logo-highlight">Deepika </span>Potula</h1>
             <h1>The passionate Frontend Developer</h1>
-            <p>I am Pothula Deepika, an enthusiastic learner and aspiring web developer, currently pursuing a Bachelor of Technology in Electrical and Electronics Engineering at GATES Institute of Technology, Gooty (2026). I enjoy exploring new technologies and translating creative ideas into functional, user-friendly interfaces. My goal is to grow as a professional while building clean, responsive, and engaging websites.</p>
+            <p>I am Pothula Deepika, an enthusiastic learner and aspiring web developer, currently pursuing a Bachelor
+                of Technology in Electrical and Electronics Engineering at GATES Institute of Technology, Gooty (2026).
+                I enjoy exploring new technologies and translating creative ideas into functional, user-friendly
+                interfaces. My goal is to grow as a professional while building clean, responsive, and engaging
+                websites.</p>
             <div class="bottom-buttons">
-               <a href="contact.html"><button class="contact-button">Hire Me</button></a>
-                <a href="https://drive.google.com/file/d/1yN15x2RGs75cfbcSBPtXRRwdYLsYy7qr/view?usp=drive_link" target="_blank"><button class="contact-button cv-btn" style="background-color: #000000;border: 1px solid #ffffff;color: white;">Download CV</button></a>
+                <a href="contact.html"><button class="contact-button">Hire Me</button></a>
+                <a href="https://drive.google.com/file/d/1yN15x2RGs75cfbcSBPtXRRwdYLsYy7qr/view?usp=drive_link"
+                    target="_blank"><button class="contact-button cv-btn"
+                        style="background-color: #000000;border: 1px solid #ffffff;color: white;">Download
+                        CV</button></a>
             </div>
         </div>
         <div class="image-side"></div>
     </main>
 </body>
+
 </html>

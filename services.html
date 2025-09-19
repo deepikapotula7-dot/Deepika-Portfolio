@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Portfolio</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        background-image: url(https://i.pinimg.com/1200x/31/5d/a7/315da7e77bc8252631a471eaece392e4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+    nav{
+        height: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #303030;
+        padding: 0 20px;
+    }
+    main{
+        height: 600px;
+        margin: auto;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px;
+    }
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 50px;
+        color: white;
+    }
+    .navlinks {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+    .text-side {
+        flex: 1;
+        padding: 20px;
+    }
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 18px;
+
+}
+.image-side {
+    height: 80%;
+    width: 30%;
+    background:url(https://i.pinimg.com/736x/58/be/b5/58beb5b7344a0c70b41b72408879c0d6.jpg);
+    border-radius: 50%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.contact-button {
+    padding: 5px 20px;
+    background-color: rgb(159, 159, 159);
+    color: rgb(0, 0, 0);
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.bottom-buttons {
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+}
+.logo-highlight{
+    color: #E74412;
+}
+a:hover {
+    color: #E74412;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.active-page{
+    color: #E74412;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.contact-button:hover {
+    background-color: #E74412;
+    color: white;
+    border: 1px solid #000000;
+}
+.card1 {
+    height: 400px;
+    width: 300px;
+    background:url(https://www.syncfusion.com/blogs/wp-content/uploads/2020/07/Top-6-Front-End-Web-Development-Tools-to-Increase-Your-Productivity-in-2020-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.text-area {
+      height: 250px;
+    width: 300px;
+    background-color: #303030;
+    border: 1px solid rgb(255, 255, 255);
+    position: relative;
+    top: 150px;
+    border-radius:50% 50% 10px 10px;
+    text-align: center;
+}
+.card2 {
+    height: 400px;
+    width: 300px;
+    background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh1-OHznp-NdSD7Pdly_nNrxD_9-kz7ll956Laj8ohcoMLhiAgyHhzS5P6RgGUpG-rczo&usqp=CAU);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.card3 {
+  height: 400px;
+    width: 300px;
+    background:url(https://bs-uploads.toptal.io/blackfish-uploads/components/open_graph_image/8959179/og_image/optimized/0712-Bad_Practices_in_Database_Design_-_Are_You_Making_These_Mistakes_Dan_Social-754bc73011e057dc76e55a44a954e0c3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+
+
+</style>
+<body>
+    <nav>
+        <div class="logo"><span class="logo-highlight">Deep</span>ika</div>
+        <div class="navlinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html" class="active-page">Services</a>
+            <a href="education.html">Education</a>
+            <a href="projects.html">Projects</a>
+        </div>
+        <a href="contact.html"><button class="contact-button">Contact</button></a>
+    </nav>
+
+    <main>
+<div class="card1">
+    <div class="text-area">
+        <h1 style="margin-top: 60px;">Frontend Developer</h1>
+        <p>Specializes in creating user interfaces and experiences.</p>
+        <button class="contact-button">Know More</button>
+    </div>
+</div>
+<div class="card2">
+    <div class="text-area">
+        <h1 style="margin-top: 60px;">Backend Developer</h1>
+        <p>Focuses on server-side logic and database management.</p>
+        <button class="contact-button">Know More</button>
+    </div>
+</div>
+<div class="card3">
+    <div class="text-area">
+        <h1 style="margin-top: 60px;">Data Bases</h1>
+        <p>Expertise in database design, implementation, and management.</p>
+        <button class="contact-button">Know More</button>
+    </div>
+</div>
+    </main>
+</body>
+</html>

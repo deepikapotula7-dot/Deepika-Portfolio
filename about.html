@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Portfolio</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        background-image: url(https://i.pinimg.com/736x/fc/40/56/fc4056fa37514fd4c35ca766756eda0f.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+    nav{
+        height: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #303030;
+        padding: 0 20px;
+    }
+    main{
+        height: 600px;
+        margin: auto;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 30px;
+    }
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 50px;
+        color: white;
+    }
+    .navlinks {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+    .text-side {
+        flex: 1;
+        padding: 20px;
+    }
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 18px;
+
+}
+.image-side {
+    height: 80%;
+    width: 30%;
+    background:url(https://i.pinimg.com/736x/58/be/b5/58beb5b7344a0c70b41b72408879c0d6.jpg);
+    border-radius: 50%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.contact-button {
+    padding: 10px 20px;
+    background-color: rgb(159, 159, 159);
+    color: rgb(0, 0, 0);
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.bottom-buttons {
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+}
+.logo-highlight{
+    color: #E74412;
+}
+a:hover {
+    color: #E74412;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.active-page{
+    color: #E74412;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.contact-button:hover {
+    background-color: #E74412;
+    color: white;
+    border: 1px solid #000000;
+}
+.cv-btn:hover {
+    background-color: #E74412;
+    color: white;
+    border: 1px solid #ffffff;
+}
+</style>
+<body>
+    <nav>
+        <div class="logo"><span class="logo-highlight">Deep</span>ika</div>
+        <div class="navlinks">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active-page">About</a>
+            <a href="services.html">Services</a>
+            <a href="education.html">Education</a>
+            <a href="projects.html">Projects</a>
+        </div>
+        <a href="contact.html"><button class="contact-button">Contact</button></a>
+    </nav>
+
+    <main>
+        <div class="text-side">
+            <h2><span class="logo-highlight">About</span> me</h2>
+            <h1><span class="logo-highlight">Frontend</span> Developer</h1>
+            <p>As a budding Frontend Developer, I specialize in crafting visually appealing and responsive web pages using HTML, CSS, and JavaScript. I focus on clear layouts, smooth navigation, and good design practices to deliver a pleasant user experience. I’m passionate about turning designs into working interfaces and continuously improving my skills to stay up to date with modern web trends.</p>
+            <div class="bottom-buttons">
+                <a href="projects.html"><button class="contact-button">My Projects</button></a>
+            </div>
+        </div>
+        <div class="image-side"></div>
+    </main>
+</body>
+</html>

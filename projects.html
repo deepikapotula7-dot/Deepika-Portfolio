@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Portfolio</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        /* background-image: url(https://i.pinimg.com/1200x/77/f3/5e/77f35e254c8ad6c3d55dab0b879da71c.jpg); */
+       
+    }
+    nav{
+        height: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #303030;
+        padding: 0 20px;
+    }
+    .main-box{
+        height: 600px;
+        margin: auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 30px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 50px;
+        color: white;
+    }
+    .navlinks {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+    .text-side {
+        flex: 1;
+        padding: 20px;
+    }
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 18px;
+
+}
+.image-side {
+    height: 80%;
+    width: 27%;
+    margin-left: 30px;
+    border-radius: 30px;
+}
+.contact-button {
+    padding: 10px 20px;
+    background-color: rgb(159, 159, 159);
+    color: rgb(0, 0, 0);
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.bottom-buttons {
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+}
+.logo-highlight{
+    color: #E74412;
+}
+a:hover {
+    color: #E74412;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.active-page{
+    color: #E74412;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.contact-button:hover {
+    background-color: #E74412;
+    color: white;
+    border: 1px solid #000000;
+}
+.cv-btn:hover {
+    background-color: #E74412;
+    color: white;
+    border: 1px solid #ffffff;
+}
+.divide {
+    height: 40px;
+    width: 100%;
+    background: #E74412;
+}
+</style>
+<body>
+    <nav>
+        <div class="logo"><span class="logo-highlight">Deep</span>ika</div>
+        <div class="navlinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html" >Services</a>
+            <a href="education.html">Education</a>
+            <a href="projects.html"  class="active-page">Projects</a>
+        </div>
+        <a href="contact.html"><button class="contact-button">Contact</button></a>
+    </nav>
+    
+     <div class="main-box" style="background: url(https://i.pinimg.com/1200x/77/f3/5e/77f35e254c8ad6c3d55dab0b879da71c.jpg); background-repeat: no-repeat; background-position: top; background-size: cover;">
+        <div class="text-side">
+            <h1><span class="logo-highlight">Meesho</span> Clone</h1>
+            <h3><span class="logo-highlight">(HTML, CSS, RESPONSIVE) </span></h3>
+            <p>Meesho Clone Website – A simple e-commerce web application inspired by Meesho. It features a responsive homepage, product listing, and shopping cart built using HTML, CSS, and JavaScript. This project helped me practice front-end design, layout structuring, and improving user experience.</p>
+            <div class="bottom-buttons">
+                <button class="contact-button">Go Live</button>
+            </div>
+            
+        </div>
+        <div class="image-side" style="background: url(meesho.png); background-repeat: no-repeat; background-position: top; background-size: cover;"></div>
+    </div>
+    <div class="divide"></div>
+     <div class="main-box" style="background: url(https://i.pinimg.com/1200x/77/f3/5e/77f35e254c8ad6c3d55dab0b879da71c.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; background-attachment: fixed;">
+                <div class="image-side" style="background: url(myntra.png); background-repeat: no-repeat; background-position: top; background-size: cover; margin-left: 0; margin-right: 30px;"></div>
+
+        <div class="text-side" style="margin-left: 30px;">
+            <h1><span class="logo-highlight">Myntra </span>Clone</h1>
+            <h3><span class="logo-highlight">(HTML, CSS, RESPONSIVE, JAVASCRIPT)</span></h3>
+            <p>Myntra Clone Website – A front-end replica of the popular fashion e-commerce platform, created with HTML, CSS, and JavaScript. It includes a responsive homepage, product categories, and basic shopping interface, helping me strengthen my skills in layout design, styling, and user-friendly navigation.</p>
+            <div class="bottom-buttons">
+                <button class="contact-button">Go Live</button>
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="divide"></div>
+     <div class="main-box" style="background: url(https://i.pinimg.com/1200x/77/f3/5e/77f35e254c8ad6c3d55dab0b879da71c.jpg); background-repeat: no-repeat; background-position: bottom; background-size: cover;">
+        <div class="text-side">
+            <h1><span class="logo-highlight">Advanced</span> Login Page</h1>
+            <h3><span class="logo-highlight">(HTML, CSS, RESPONSIVE, JAVASCRIPT)</span></h3>
+            <p>Advanced Login Page – A secure and user-friendly login interface built with HTML, CSS, and JavaScript. It features responsive design, form validation, and a clean layout, showcasing my ability to create functional and visually appealing authentication pages.</p>
+            <div class="bottom-buttons">
+                <button class="contact-button">Go Live</button>
+            </div>
+            
+        </div>
+                <div class="image-side" style="background: url(login.png); background-repeat: no-repeat; background-position: top; background-size: cover;"></div>
+
+    </div>
+</body>
+</html>
